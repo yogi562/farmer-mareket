@@ -1,0 +1,36 @@
+body{
+font-family: Arial;
+text-align:center;
+background:#f2f2f2;
+}
+
+input{
+display:block;
+margin:10px auto;
+padding:8px;
+width:200px;
+}
+
+button{
+padding:10px;
+margin:5px;
+background:green;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+button:hover{
+background:darkgreen;
+}
+
+.product{
+border:1px solid grey;
+margin:10px;
+padding:10px;
+background:white;
+}
+
+.hidden{
+display:none;
+}

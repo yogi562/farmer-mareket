@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Farm Market App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOGIN PAGE -->
+
+<div id="loginPage">
+<h2>Login / Sign Up</h2>
+
+<input type="text" placeholder="Username">
+<input type="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+<button onclick="login()">Sign Up</button>
+</div>
+
+
+<!-- ROLE SELECTION -->
+
+<div id="rolePage" class="hidden">
+
+<h2>Select Your Role</h2>
+
+<button onclick="showBuyer()">Buyer</button>
+<button onclick="showSeller()">Seller</button>
+<button onclick="showTransport()">Transporter</button>
+
+</div>
+
+
+<!-- BUYER PAGE -->
+
+<div id="buyerPage" class="hidden">
+
+<h2>Buy Products</h2>
+
+<input type="text" id="search" placeholder="Search products">
+
+<button onclick="searchProduct()">Search</button>
+
+<div id="productList">
+
+<div class="product">
+<h3>Tomato</h3>
+<p>Price: ₹40/kg</p>
+<p>Rating: ⭐⭐⭐⭐</p>
+<button onclick="buy()">Buy</button>
+</div>
+
+<div class="product">
+<h3>Potato</h3>
+<p>Price: ₹30/kg</p>
+<p>Rating: ⭐⭐⭐⭐</p>
+<button onclick="buy()">Buy</button>
+</div>
+
+<div class="product">
+<h3>Mango</h3>
+<p>Price: ₹80/kg</p>
+<p>Rating: ⭐⭐⭐⭐⭐</p>
+<button onclick="buy()">Buy</button>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- SELLER PAGE -->
+
+<div id="sellerPage" class="hidden">
+
+<h2>Sell Your Products</h2>
+
+<input type="text" placeholder="Product Name">
+
+<input type="number" placeholder="Price">
+
+<input type="file">
+
+<button onclick="sell()">Upload Product</button>
+
+</div>
+
+
+<!-- TRANSPORT PAGE -->
+
+<div id="transportPage" class="hidden">
+
+<h2>Transport Service</h2>
+
+<p>Seller Location:</p>
+<input type="text" id="sellerLoc" placeholder="Seller City">
+
+<p>Buyer Location:</p>
+<input type="text" id="buyerLoc" placeholder="Buyer City">
+
+<button onclick="calculate()">Calculate Distance & Charge</button>
+
+<p id="result"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
